@@ -30,7 +30,7 @@ def group_bar(df1, df2, col_name, title, x_title, y_title, x=None, x1='More Than
     
     
 def clean_data():
-    df = pd.read_csv(r'C:\Users\kyoko\Jupyter\Udacity\Visualization-Lesson7\data\listings.csv')
+    df = pd.read_csv('data/listings.csv')
 
     df['Booking Percentage'] = (365-df['availability_365'])/365 * 100
 
